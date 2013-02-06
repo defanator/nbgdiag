@@ -11,6 +11,6 @@ linefeeds), the following commands can be used:
 
     sed -e "s#\x1b\x37##g" | \
     tr -d '\r' | \
-    sed -e "s#----1    #----\n1
+    sed -e "s#----1    #----\n    #"
 
 (last one fixes missing newline in "ip tos disp" output).
